@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="FillSeponStaging"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{78B68164-D455-4C3E-94C7-FF24E8A0803E}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{2FD99B8D-786D-47F8-93FE-1EF86D23C638}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\References.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\References.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -33,7 +33,7 @@
       DTS:ObjectName="Excel Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Images.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Images.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -43,7 +43,37 @@
       DTS:ObjectName="Excel Connection Manager 10">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Samples_New.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Samples_New.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 11]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{EF80B1DE-E0E4-45EE-BB15-8AE22121889E}"
+      DTS:ObjectName="Excel Connection Manager 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 12]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{84B6FE54-BF83-4503-9F22-26E4F4E1C6D1}"
+      DTS:ObjectName="Excel Connection Manager 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results - Copy.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 13]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{1D94DFAF-3618-45F6-B5CD-8719DB63CEB5}"
+      DTS:ObjectName="Excel Connection Manager 13">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -53,7 +83,7 @@
       DTS:ObjectName="Excel Connection Manager 2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -63,7 +93,7 @@
       DTS:ObjectName="Excel Connection Manager 3">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -73,7 +103,7 @@
       DTS:ObjectName="Excel Connection Manager 4">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\References.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\References.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -83,7 +113,7 @@
       DTS:ObjectName="Excel Connection Manager 5">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Users.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Users.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -93,7 +123,7 @@
       DTS:ObjectName="Excel Connection Manager 6">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Samples_New.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Samples_New.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -103,7 +133,7 @@
       DTS:ObjectName="Excel Connection Manager 7">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Images.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Images.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -113,7 +143,7 @@
       DTS:ObjectName="Excel Connection Manager 8">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Objects.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Objects.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -123,7 +153,7 @@
       DTS:ObjectName="Excel Connection Manager 9">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Objects.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Objects.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1903,11 +1933,17 @@
                           externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IsResult]"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IsResult]" />
                         <inputColumn
-                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Cause_Of_Error]"
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Comments]"
                           cachedDataType="r8"
-                          cachedName="Cause_Of_Error"
-                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cause_Of_Error]"
-                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cause_Of_Error]" />
+                          cachedName="Comments"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Comments]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Comments]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Normalised]"
+                          cachedDataType="r8"
+                          cachedName="Normalised"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Normalised]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Normalised]" />
                         <inputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Img_identifier]"
                           cachedDataType="wstr"
@@ -2054,6 +2090,150 @@
                           externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cu]"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cu]" />
                         <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Mo]"
+                          cachedDataType="r8"
+                          cachedName="Mo"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Mo]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Mo]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Ca]"
+                          cachedDataType="r8"
+                          cachedName="Ca"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Ca]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ca]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[V2O5]"
+                          cachedDataType="r8"
+                          cachedName="V2O5"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[V2O5]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[V2O5]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ZrO2]"
+                          cachedDataType="r8"
+                          cachedName="ZrO2"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ZrO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[ZrO2]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Cl]"
+                          cachedDataType="r8"
+                          cachedName="Cl"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cl]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cl]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SeO2]"
+                          cachedDataType="r8"
+                          cachedName="SeO2"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SeO2]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[K]"
+                          cachedDataType="r8"
+                          cachedName="K"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[K]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[K]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Cu2O]"
+                          cachedDataType="r8"
+                          cachedName="Cu2O"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cu2O]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cu2O]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Fe2O3]"
+                          cachedDataType="r8"
+                          cachedName="Fe2O3"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Fe2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Fe2O3]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sn]"
+                          cachedDataType="r8"
+                          cachedName="Sn"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sn]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sn]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[As]"
+                          cachedDataType="r8"
+                          cachedName="As"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[As]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[As]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Ni]"
+                          cachedDataType="r8"
+                          cachedName="Ni"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Ni]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ni]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Cr]"
+                          cachedDataType="r8"
+                          cachedName="Cr"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cr]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cr]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Na2O]"
+                          cachedDataType="r8"
+                          cachedName="Na2O"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Na2O]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Na2O]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[BaO]"
+                          cachedDataType="r8"
+                          cachedName="BaO"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[BaO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[BaO]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Cr2O3]"
+                          cachedDataType="r8"
+                          cachedName="Cr2O3"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cr2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cr2O3]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[WO3]"
+                          cachedDataType="r8"
+                          cachedName="WO3"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WO3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[WO3]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SnO2]"
+                          cachedDataType="r8"
+                          cachedName="SnO2"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SnO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SnO2]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[As2O3]"
+                          cachedDataType="r8"
+                          cachedName="As2O3"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[As2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[As2O3]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PbO]"
+                          cachedDataType="r8"
+                          cachedName="PbO"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PbO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[PbO]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[CoO]"
+                          cachedDataType="r8"
+                          cachedName="CoO"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[CoO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[CoO]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SrO]"
+                          cachedDataType="r8"
+                          cachedName="SrO"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SrO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SrO]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Mn]"
+                          cachedDataType="r8"
+                          cachedName="Mn"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Mn]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Mn]" />
+                        <inputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[P]"
+                          cachedDataType="r8"
+                          cachedName="P"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[P]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[P]" />
+                        <inputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Total]"
                           cachedDataType="r8"
                           cachedName="Total"
@@ -2091,10 +2271,14 @@
                           dataType="bool"
                           name="IsResult" />
                         <externalMetadataColumn
-                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cause_Of_Error]"
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Comments]"
                           dataType="wstr"
                           length="500"
-                          name="Cause_Of_Error" />
+                          name="Comments" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Normalised]"
+                          dataType="bool"
+                          name="Normalised" />
                         <externalMetadataColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Img_identifier]"
                           dataType="wstr"
@@ -2193,6 +2377,102 @@
                           dataType="r8"
                           name="Cu" />
                         <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Mo]"
+                          dataType="r8"
+                          name="Mo" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Ca]"
+                          dataType="r8"
+                          name="Ca" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[V2O5]"
+                          dataType="r8"
+                          name="V2O5" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ZrO2]"
+                          dataType="r8"
+                          name="ZrO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cl]"
+                          dataType="r8"
+                          name="Cl" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SeO2]"
+                          dataType="r8"
+                          name="SeO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[K]"
+                          dataType="r8"
+                          name="K" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cu2O]"
+                          dataType="r8"
+                          name="Cu2O" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Fe2O3]"
+                          dataType="r8"
+                          name="Fe2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sn]"
+                          dataType="r8"
+                          name="Sn" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[As]"
+                          dataType="r8"
+                          name="As" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Ni]"
+                          dataType="r8"
+                          name="Ni" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cr]"
+                          dataType="r8"
+                          name="Cr" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Na2O]"
+                          dataType="r8"
+                          name="Na2O" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[BaO]"
+                          dataType="r8"
+                          name="BaO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Cr2O3]"
+                          dataType="r8"
+                          name="Cr2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[WO3]"
+                          dataType="r8"
+                          name="WO3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SnO2]"
+                          dataType="r8"
+                          name="SnO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[As2O3]"
+                          dataType="r8"
+                          name="As2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PbO]"
+                          dataType="r8"
+                          name="PbO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[CoO]"
+                          dataType="r8"
+                          name="CoO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SrO]"
+                          dataType="r8"
+                          name="SrO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Mn]"
+                          dataType="r8"
+                          name="Mn" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[P]"
+                          dataType="r8"
+                          name="P" />
+                        <externalMetadataColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Total]"
                           dataType="r8"
                           name="Total" />
@@ -2267,8 +2547,8 @@
                   <connections>
                     <connection
                       refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 3]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 3]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 13]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 13]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2336,13 +2616,22 @@
                           name="IsResult"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cause_Of_Error]"
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Comments]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cause_Of_Error]"
-                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cause_Of_Error]"
-                          name="Cause_Of_Error"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Comments]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Comments]"
+                          name="Comments"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Normalised]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Normalised]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Normalised]"
+                          name="Normalised"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Img_identifier]"
@@ -2562,6 +2851,240 @@
                           name="Cu"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Mo]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Mo]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Mo]"
+                          name="Mo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ca]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ca]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ca]"
+                          name="Ca"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[V2O5]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[V2O5]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[V2O5]"
+                          name="V2O5"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[ZrO2]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[ZrO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[ZrO2]"
+                          name="ZrO2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[HfO2]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[HfO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[HfO2]"
+                          name="HfO2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cl]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cl]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cl]"
+                          name="Cl"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SeO2]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[SeO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SeO2]"
+                          name="SeO2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[K]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[K]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[K]"
+                          name="K"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cu2O]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cu2O]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cu2O]"
+                          name="Cu2O"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Fe2O3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Fe2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Fe2O3]"
+                          name="Fe2O3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sn]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sn]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sn]"
+                          name="Sn"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sb]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sb]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sb]"
+                          name="Sb"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[As]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[As]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[As]"
+                          name="As"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ni]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ni]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ni]"
+                          name="Ni"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cr]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cr]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cr]"
+                          name="Cr"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Na2O]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Na2O]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Na2O]"
+                          name="Na2O"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[BaO]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[BaO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[BaO]"
+                          name="BaO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cr2O3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cr2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Cr2O3]"
+                          name="Cr2O3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[WO3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[WO3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[WO3]"
+                          name="WO3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SnO2]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[SnO2]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SnO2]"
+                          name="SnO2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[As2O3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[As2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[As2O3]"
+                          name="As2O3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[PbO]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[PbO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[PbO]"
+                          name="PbO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[CoO]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[CoO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[CoO]"
+                          name="CoO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SrO]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[SrO]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[SrO]"
+                          name="SrO"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Mn]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Mn]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Mn]"
+                          name="Mn"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[P]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[P]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[P]"
+                          name="P"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Total]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
@@ -2602,9 +3125,13 @@
                           dataType="r8"
                           name="IsResult" />
                         <externalMetadataColumn
-                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cause_Of_Error]"
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Comments]"
                           dataType="r8"
-                          name="Cause_Of_Error" />
+                          name="Comments" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Normalised]"
+                          dataType="r8"
+                          name="Normalised" />
                         <externalMetadataColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Img_identifier]"
                           dataType="wstr"
@@ -2703,6 +3230,110 @@
                           dataType="r8"
                           name="Cu" />
                         <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Mo]"
+                          dataType="r8"
+                          name="Mo" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ca]"
+                          dataType="r8"
+                          name="Ca" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[V2O5]"
+                          dataType="r8"
+                          name="V2O5" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[ZrO2]"
+                          dataType="r8"
+                          name="ZrO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[HfO2]"
+                          dataType="r8"
+                          name="HfO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cl]"
+                          dataType="r8"
+                          name="Cl" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[SeO2]"
+                          dataType="r8"
+                          name="SeO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[K]"
+                          dataType="r8"
+                          name="K" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cu2O]"
+                          dataType="r8"
+                          name="Cu2O" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Fe2O3]"
+                          dataType="r8"
+                          name="Fe2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sn]"
+                          dataType="r8"
+                          name="Sn" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sb]"
+                          dataType="r8"
+                          name="Sb" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[As]"
+                          dataType="r8"
+                          name="As" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ni]"
+                          dataType="r8"
+                          name="Ni" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cr]"
+                          dataType="r8"
+                          name="Cr" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Na2O]"
+                          dataType="r8"
+                          name="Na2O" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[BaO]"
+                          dataType="r8"
+                          name="BaO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Cr2O3]"
+                          dataType="r8"
+                          name="Cr2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[WO3]"
+                          dataType="r8"
+                          name="WO3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[SnO2]"
+                          dataType="r8"
+                          name="SnO2" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[As2O3]"
+                          dataType="r8"
+                          name="As2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[PbO]"
+                          dataType="r8"
+                          name="PbO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[CoO]"
+                          dataType="r8"
+                          name="CoO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[SrO]"
+                          dataType="r8"
+                          name="SrO" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Mn]"
+                          dataType="r8"
+                          name="Mn" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[P]"
+                          dataType="r8"
+                          name="P" />
+                        <externalMetadataColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total]"
                           dataType="r8"
                           name="Total" />
@@ -2748,10 +3379,15 @@
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[IsResult]"
                           name="IsResult" />
                         <outputColumn
-                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cause_Of_Error]"
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Comments]"
                           dataType="r8"
-                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cause_Of_Error]"
-                          name="Cause_Of_Error" />
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Comments]"
+                          name="Comments" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Normalised]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Normalised]"
+                          name="Normalised" />
                         <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Img_identifier]"
                           dataType="wstr"
@@ -2873,6 +3509,136 @@
                           dataType="r8"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cu]"
                           name="Cu" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Mo]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Mo]"
+                          name="Mo" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ca]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ca]"
+                          name="Ca" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[V2O5]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[V2O5]"
+                          name="V2O5" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ZrO2]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ZrO2]"
+                          name="ZrO2" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[HfO2]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[HfO2]"
+                          name="HfO2" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cl]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cl]"
+                          name="Cl" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[SeO2]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[SeO2]"
+                          name="SeO2" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[K]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[K]"
+                          name="K" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cu2O]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cu2O]"
+                          name="Cu2O" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Fe2O3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Fe2O3]"
+                          name="Fe2O3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Sn]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Sn]"
+                          name="Sn" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Sb]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Sb]"
+                          name="Sb" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[As]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[As]"
+                          name="As" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ni]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ni]"
+                          name="Ni" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cr]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cr]"
+                          name="Cr" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Na2O]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Na2O]"
+                          name="Na2O" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[BaO]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[BaO]"
+                          name="BaO" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cr2O3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Cr2O3]"
+                          name="Cr2O3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[WO3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[WO3]"
+                          name="WO3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[SnO2]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[SnO2]"
+                          name="SnO2" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[As2O3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[As2O3]"
+                          name="As2O3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[PbO]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[PbO]"
+                          name="PbO" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[CoO]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[CoO]"
+                          name="CoO" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[SrO]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[SrO]"
+                          name="SrO" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Mn]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Mn]"
+                          name="Mn" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[P]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[P]"
+                          name="P" />
                         <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Total]"
                           dataType="r8"
@@ -4175,22 +4941,6 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="258,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task"
-          TopLeft="33.8749928691734,16.8499931541086" />
-        <NodeLayout
-          Size="224,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task"
-          TopLeft="53.319437023873,90.62777144846" />
-        <NodeLayout
-          Size="197.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task"
-          TopLeft="62.3472146671266,159.71110538231" />
-        <NodeLayout
-          Size="237.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task"
-          TopLeft="39.0833261248965,230.59999483943" />
-        <NodeLayout
           Size="206.666666666667,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task"
           TopLeft="60.9583257989336,311.59999522686" />
@@ -4198,20 +4948,48 @@
           Size="181.333333333334,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task"
           TopLeft="66.1666590546568,386.09999573052" />
+        <NodeLayout
+          Size="224,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task"
+          TopLeft="53.319437023873,90.62777144846" />
+        <NodeLayout
+          Size="237.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task"
+          TopLeft="39.0833261248965,230.59999483943" />
+        <NodeLayout
+          Size="230.666666666667,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task"
+          TopLeft="33.8749928691734,16.8499931541086" />
+        <NodeLayout
+          Size="197.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task"
+          TopLeft="62.3472146671266,159.71110538231" />
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="164.097214946523,59.5166598207753">
+          TopLeft="149.208326202507,59.5166598207753">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31.1111116276847"
+              EndConnector="16.1111108213663,31.1111116276847"
               Start="0,0"
-              End="0,23.6111116276847">
+              End="16.1111108213663,23.6111116276847">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.6111116276847" />
+                    End="0,11.5555558138424" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.5555558138424"
+                    Point2="0,15.5555558138424"
+                    Point3="4,15.5555558138424" />
+                  <mssgle:LineSegment
+                    End="12.1111108213663,15.5555558138424" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.1111108213663,15.5555558138424"
+                    Point2="16.1111108213663,15.5555558138424"
+                    Point3="16.1111108213663,19.5555558138424" />
+                  <mssgle:LineSegment
+                    End="16.1111108213663,23.6111116276847" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4311,14 +5089,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="337.333333333334,497.333333333334"
-          Size="337.333333333334,540"
+          PanelSize="337.333333333334,498"
+          Size="337.333333333334,540.666666666667"
           Id="Package\Fill Fact Tables Sequence Container"
           TopLeft="70.1388878437381,458.249997229875" />
-        <NodeLayout
-          Size="293.333333333334,42.6666666666667"
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task"
-          TopLeft="30.4861115509023,24.6111117439137" />
         <NodeLayout
           Size="194.666666666667,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task"
@@ -4327,6 +5101,10 @@
           Size="241.333333333334,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task"
           TopLeft="59.63888562926,177.611107172238" />
+        <NodeLayout
+          Size="293.333333333334,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task"
+          TopLeft="30.4861115509023,24.6111117439137" />
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint]"
           TopLeft="177.618053607539,67.2777784105804">
@@ -4426,13 +5204,6 @@
           Size="342,322.666666666667"
           Id="Package\Pre-Load Sequence Container"
           TopLeft="62.4999990686773,83.4166651750604" />
-        <AnnotationLayout
-          Text="Loading Raw Data to Sepon Staging database"
-          ParentId="Package"
-          FontInfo="{assembly:Null}"
-          Size="270.666666666667,60"
-          Id="10c91a4d-a579-4c32-a647-59557f2916ea"
-          TopLeft="76.0416655335576,40.9999987602234" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="404.499999068677,244.208331851413">
@@ -4523,24 +5294,31 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Loading Raw Data to Sepon Staging database"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="270.666666666667,40"
+          Id="10c91a4d-a579-4c32-a647-59557f2916ea"
+          TopLeft="76.0416655335576,40.9999987602234" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task">
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="180,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\ADO NET Destination"
           TopLeft="107.083331737667,111.79999800086" />
         <NodeLayout
           Size="139.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\Excel Source"
           TopLeft="130.416664723307,15.5999997210503" />
         <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task.Paths[Excel Source Output]"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task.Paths[Excel Source Output]"
           TopLeft="198.58333156382,58.2666663877169">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4553,6 +5331,262 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,46.0333316131433" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\ADO NET Destination"
+          TopLeft="107.083331737667,111.79999800086" />
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\Excel Source"
+          TopLeft="130.416664723307,15.5999997210503" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task.Paths[Excel Source Output]"
+          TopLeft="198.58333156382,58.2666663877169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.5333316131433"
+              Start="0,0"
+              End="0,46.0333316131433">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.0333316131433" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\Excel Source"
+          TopLeft="130.416664723307,15.5999997210503" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\ADO NET Destination"
+          TopLeft="106.416665071,111.133331334193" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="198.249998230487,58.266666387717">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.8666649464764"
+              Start="0,0"
+              End="0,45.3666649464764">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.3666649464764" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\ADO NET Destination"
+          TopLeft="107.083331737667,111.79999800086" />
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\Excel Source"
+          TopLeft="130.416664723307,15.5999997210503" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="198.58333156382,58.2666663877169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.5333316131433"
+              Start="0,0"
+              End="0,46.0333316131433">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.0333316131433" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination"
+          TopLeft="153.749997708946,119.599997861385" />
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source"
+          TopLeft="149.16666444391,34.6666660467784" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="218.833331110577,77.333332713445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24.9166665983697,42.2666651479404"
+              Start="0,0"
+              End="24.9166665983697,34.7666651479404">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.1333325739702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.1333325739702"
+                    Point2="0,21.1333325739702"
+                    Point3="4,21.1333325739702" />
+                  <mssgle:LineSegment
+                    End="20.9166665983697,21.1333325739702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.9166665983697,21.1333325739702"
+                    Point2="24.9166665983697,21.1333325739702"
+                    Point3="24.9166665983697,25.1333325739702" />
+                  <mssgle:LineSegment
+                    End="24.9166665983697,34.7666651479404" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4586,20 +5620,20 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task">
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\ADO NET Destination"
-          TopLeft="107.083331737667,111.79999800086" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="139.333333333334,42.6666666666667"
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\Excel Source"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\Excel Source"
           TopLeft="130.416664723307,15.5999997210503" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\ADO NET Destination"
+          TopLeft="107.083331737667,111.79999800086" />
         <EdgeLayout
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task.Paths[Excel Source Output]"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task.Paths[Excel Source Output]"
           TopLeft="198.58333156382,58.2666663877169">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4617,14 +5651,16 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\ADO NET Destination">
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4632,7 +5668,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\Excel Source">
+    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4648,15 +5684,15 @@
     design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task\ADO NET Destination"
-          TopLeft="107.083331737667,111.79999800086" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="139.333333333334,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task\Excel Source"
           TopLeft="130.416664723307,15.5999997210503" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task\ADO NET Destination"
+          TopLeft="107.083331737667,111.79999800086" />
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task.Paths[Excel Source Output]"
           TopLeft="198.58333156382,58.266666387717">
@@ -4676,7 +5712,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4707,15 +5745,15 @@
     design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task\ADO NET Destination"
-          TopLeft="107.083331737667,111.79999800086" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="139.333333333334,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task\Excel Source"
           TopLeft="130.416664723307,15.5999997210503" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task\ADO NET Destination"
+          TopLeft="107.083331737667,111.79999800086" />
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task.Paths[Excel Source Output]"
           TopLeft="198.58333156382,58.266666387717">
@@ -4735,7 +5773,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4763,79 +5803,20 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task">
+    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\ADO NET Destination"
-          TopLeft="106.416665071,111.133331334193" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="139.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\Excel Source"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\Excel Source"
           TopLeft="130.416664723307,15.5999997210503" />
-        <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="198.249998230487,58.266666387717">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.8666649464764"
-              Start="0,0"
-              End="0,45.3666649464764">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.3666649464764" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill References Data Flow Task\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\ADO NET Destination"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\ADO NET Destination"
           TopLeft="107.083331737667,111.79999800086" />
-        <NodeLayout
-          Size="139.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\Excel Source"
-          TopLeft="130.416664723307,15.5999997210503" />
         <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task.Paths[Excel Source Output]"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task.Paths[Excel Source Output]"
           TopLeft="198.58333156382,58.2666663877169">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4853,14 +5834,16 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\ADO NET Destination">
+    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4868,184 +5851,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Users Data Flow Task\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\ADO NET Destination"
-          TopLeft="107.083331737667,111.79999800086" />
-        <NodeLayout
-          Size="139.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\Excel Source"
-          TopLeft="130.416664723307,15.5999997210503" />
-        <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="198.58333156382,58.2666663877169">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.5333316131433"
-              Start="0,0"
-              End="0,46.0333316131433">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.0333316131433" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Samples_New Data Flow Task\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\ADO NET Destination"
-          TopLeft="107.083331737667,111.79999800086" />
-        <NodeLayout
-          Size="139.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\Excel Source"
-          TopLeft="130.416664723307,15.5999997210503" />
-        <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="198.58333156382,58.2666663877169">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.5333316131433"
-              Start="0,0"
-              End="0,46.0333316131433">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.0333316131433" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Images Data Flow Task\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\ADO NET Destination"
-          TopLeft="107.083331737667,111.79999800086" />
-        <NodeLayout
-          Size="139.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\Excel Source"
-          TopLeft="130.416664723307,15.5999997210503" />
-        <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task.Paths[Excel Source Output]"
-          TopLeft="198.58333156382,58.2666663877169">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.5333316131433"
-              Start="0,0"
-              End="0,46.0333316131433">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.0333316131433" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fill Fact Tables Sequence Container\Fill Objects Flow Task\Excel Source">
+    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

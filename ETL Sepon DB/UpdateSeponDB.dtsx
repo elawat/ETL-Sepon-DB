@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="UpdateSeponDB"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{279B6BC0-3D6D-416B-BF5C-45D5A9F3AFF3}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{DBA5F49A-16CA-4954-A070-5BA87108A89F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -260,6 +260,42 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
+          DTS:refId="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDataPoints Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{2de95c90-1dba-4de2-8db5-b05e7de7ee7a}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Fill SEM_ResultsDataPoints Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{C7BE5C09-1879-4D11-BBCB-A34B301B43C0}"
+              SQLTask:IsStoredProc="True"
+              SQLTask:SqlStatementSource="[dbo].[pETLSEM_ResultsDataPoints]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDim Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{1acd7628-d844-4076-8b74-e709a0512bea}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Fill SEM_ResultsDim Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{C7BE5C09-1879-4D11-BBCB-A34B301B43C0}"
+              SQLTask:IsStoredProc="True"
+              SQLTask:SqlStatementSource="[dbo].[pETLSEM_ResultsDim]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\Fill Fact Tables Sequence Container\Fill Users Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
@@ -282,11 +318,11 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{21CAEDC4-6E16-4201-A20E-42315ACCA9EB}"
+          DTS:DTSID="{F4F80BCC-6926-4681-BC40-B8C9541D6EA3}"
           DTS:From="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Execute SQL Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Fill Fact Tables Sequence Container\Fill References Execute SQL Task" />
+          DTS:To="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDataPoints Execute SQL Task" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
@@ -319,6 +355,22 @@
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 4"
           DTS:To="Package\Fill Fact Tables Sequence Container\Fill Objects Execute SQL Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{BFCF2AF4-9895-4984-BFD1-01D63EE5E035}"
+          DTS:From="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDataPoints Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 5"
+          DTS:To="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDim Execute SQL Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 6]"
+          DTS:CreationName=""
+          DTS:DTSID="{C6991CB5-7680-4365-B56D-865C741EACBE}"
+          DTS:From="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDim Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 6"
+          DTS:To="Package\Fill Fact Tables Sequence Container\Fill References Execute SQL Task" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -475,7 +527,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{DB299990-3838-44EE-8CA9-3D7F8F68A0F9}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 2) Clear Flush and Fill Tables&#xA;Truncate Table [dbo].[Images];&#xA;Truncate Table [dbo].[ImageURL];&#xA;Truncate Table [dbo].[Objects];&#xA;Truncate Table [dbo].[References];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;--Truncate Table [dbo].[Samples];&#xA;Truncate Table [dbo].[Samples_New];&#xA;Truncate Table [dbo].[SamplesToObject_Lookup];&#xA;Truncate Table [dbo].[SEM_Results];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;Truncate Table [dbo].[Users];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 2) Clear Flush and Fill Tables&#xA;Truncate Table [dbo].[Images];&#xA;Truncate Table [dbo].[ImageURL];&#xA;Truncate Table [dbo].[Objects];&#xA;Truncate Table [dbo].[References];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;--Truncate Table [dbo].[Samples];&#xA;Truncate Table [dbo].[Samples_New];&#xA;Truncate Table [dbo].[SamplesToObject_Lookup];&#xA;Truncate Table [dbo].[SEM_Results];&#xA;Truncate Table [dbo].[SEM_ResultsDim];&#xA;Truncate Table [dbo].[SEM_ResultsDataPoints];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;Truncate Table [dbo].[Users];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -530,54 +582,32 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="218.666666666667,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Images Execute SQL Task"
+          TopLeft="57.2916647698728,448.01666745315" />
+        <NodeLayout
+          Size="218.666666666667,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Execute SQL Task"
+          TopLeft="52.0833315141497,527.099999372364" />
+        <NodeLayout
+          Size="236,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill References Execute SQL Task"
+          TopLeft="48.4583259851981,232.450000313819" />
+        <NodeLayout
+          Size="249.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Execute SQL Task"
+          TopLeft="45.6249982770531,376.51666873167" />
+        <NodeLayout
           Size="242.666666666667,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Execute SQL Task"
           TopLeft="48.7499982304873,24.5833242093525" />
         <NodeLayout
-          Size="236,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill References Execute SQL Task"
-          TopLeft="52.6249925897767,104.183335940739" />
-        <NodeLayout
           Size="209.333333333334,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill Users Execute SQL Task"
-          TopLeft="71.6666645556687,172.416672381263" />
-        <NodeLayout
-          Size="249.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Samples_New Execute SQL Task"
-          TopLeft="49.7916648816317,248.25000435859" />
-        <NodeLayout
-          Size="218.666666666667,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Images Execute SQL Task"
-          TopLeft="62.291664695367,319.75000308007" />
-        <NodeLayout
-          Size="218.666666666667,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill Objects Execute SQL Task"
-          TopLeft="57.0833314396439,398.833334999284" />
-        <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="170.354162076799,67.2499908760192">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.93334506472"
-              Start="0,0"
-              End="0,29.43334506472">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.43334506472" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="67.4999979510902,300.683336754343" />
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="173.479161906056,146.850002607406">
+          TopLeft="169.312495301477,275.116666980486">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -599,7 +629,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="175.395831385317,215.083339047929">
+          TopLeft="171.229164780738,343.350003421009">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -621,18 +651,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 3]"
-          TopLeft="173.041664788499,290.916671025257">
+          TopLeft="168.458331523463,419.183335398337">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.8333320548134"
+              EndConnector="0,28.8333320548135"
               Start="0,0"
-              End="0,21.3333320548134">
+              End="0,21.3333320548135">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.3333320548134" />
+                    End="0,21.3333320548135" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -643,18 +673,92 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 4]"
-          TopLeft="169.020831400839,362.416669746737">
+          TopLeft="164.020831475345,490.683334119817">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36.4166652525473"
+              EndConnector="0,36.4166652525471"
               Start="0,0"
-              End="0,28.9166652525473">
+              End="0,28.9166652525471">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.9166652525473" />
+                    End="0,28.9166652525471" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="293.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDataPoints Execute SQL Task"
+          TopLeft="27.9166652075949,92.9666747794557" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="172.333331719041,67.2499908760192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25.7166839034365"
+              Start="0,0"
+              End="0,18.2166839034365">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.2166839034365" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="261.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDim Execute SQL Task"
+          TopLeft="40.4166650213304,163.166671974461" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 5]"
+          TopLeft="172.833331781129,135.633341446122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.5333305283387"
+              Start="0,0"
+              End="0,20.0333305283387">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.0333305283387" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 6]"
+          TopLeft="168.770828836598,205.833338641128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.6166616726914"
+              Start="0,0"
+              End="0,19.1166616726914">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1166616726914" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -666,14 +770,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="337.333333333334,496.666666666667"
-          Size="337.333333333334,539.333333333334"
+          PanelSize="347.333333333334,727.333333333334"
+          Size="347.333333333334,770.666666666667"
           Id="Package\Fill Fact Tables Sequence Container"
           TopLeft="70.1388878437381,458.249997229875" />
-        <NodeLayout
-          Size="308,42.6666666666667"
-          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup  Execute SQL Task"
-          TopLeft="34.4166595575709,30.2499972298742" />
         <NodeLayout
           Size="232,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Execute SQL Task"
@@ -682,6 +782,10 @@
           Size="306.666666666667,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup  Execute SQL Task"
           TopLeft="36.4999928598603,182.833328103026" />
+        <NodeLayout
+          Size="308,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup  Execute SQL Task"
+          TopLeft="34.4166595575709,30.2499972298742" />
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint]"
           TopLeft="186.604159301457,72.9166638965409">
@@ -758,14 +862,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.5999983263019"
+              EndConnector="0,43.5999983263018"
               Start="0,0"
-              End="0,36.0999983263019">
+              End="0,36.0999983263018">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.0999983263019" />
+                    End="0,36.0999983263018" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -809,9 +913,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-381.555550009012,53.2499987021098"
+              EndConnector="-376.555550009012,53.2499987021098"
               Start="0,0"
-              End="-381.555550009012,45.7499987021098">
+              End="-376.555550009012,45.7499987021098">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -822,13 +926,13 @@
                     Point2="0,26.6249993510549"
                     Point3="-4,26.6249993510549" />
                   <mssgle:LineSegment
-                    End="-377.555550009012,26.6249993510549" />
+                    End="-372.555550009012,26.6249993510549" />
                   <mssgle:CubicBezierSegment
-                    Point1="-377.555550009012,26.6249993510549"
-                    Point2="-381.555550009012,26.6249993510549"
-                    Point3="-381.555550009012,30.6249993510549" />
+                    Point1="-372.555550009012,26.6249993510549"
+                    Point2="-376.555550009012,26.6249993510549"
+                    Point3="-376.555550009012,30.6249993510549" />
                   <mssgle:LineSegment
-                    End="-381.555550009012,45.7499987021098" />
+                    End="-376.555550009012,45.7499987021098" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -839,30 +943,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="407.472221177071,727.916663896542">
+          TopLeft="417.472221177071,843.583330563208">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52.0416623877566,-160.722225670352"
+              EndConnector="42.0416623877566,-276.388892337018"
               Start="0,0"
-              End="44.5416623877566,-160.722225670352">
+              End="34.5416623877566,-276.388892337018">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="22.0208311938783,0" />
+                    End="17.0208311938783,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.0208311938783,0"
-                    Point2="26.0208311938783,0"
-                    Point3="26.0208311938783,-4" />
+                    Point1="17.0208311938783,0"
+                    Point2="21.0208311938783,0"
+                    Point3="21.0208311938783,-4" />
                   <mssgle:LineSegment
-                    End="26.0208311938783,-156.722225670352" />
+                    End="21.0208311938783,-272.388892337018" />
                   <mssgle:CubicBezierSegment
-                    Point1="26.0208311938783,-156.722225670352"
-                    Point2="26.0208311938783,-160.722225670352"
-                    Point3="30.0208311938783,-160.722225670352" />
+                    Point1="21.0208311938783,-272.388892337018"
+                    Point2="21.0208311938783,-276.388892337018"
+                    Point3="25.0208311938783,-276.388892337018" />
                   <mssgle:LineSegment
-                    End="44.5416623877566,-160.722225670352" />
+                    End="34.5416623877566,-276.388892337018" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

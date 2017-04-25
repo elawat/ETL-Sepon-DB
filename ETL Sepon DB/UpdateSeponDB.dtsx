@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="UpdateSeponDB"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{DBA5F49A-16CA-4954-A070-5BA87108A89F}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{30FAE145-BF12-4208-A964-6B7D668C5F57}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -384,6 +384,24 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
+          DTS:refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample_Lookup  Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{fc309294-159f-4f19-a29f-16337b7e7116}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Fill ImagesToSample_Lookup  Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{C7BE5C09-1879-4D11-BBCB-A34B301B43C0}"
+              SQLTask:IsStoredProc="True"
+              SQLTask:SqlStatementSource="pETLImagesToSample_Lookup" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
@@ -455,6 +473,14 @@
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
           DTS:To="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup  Execute SQL Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{E79B27F3-5300-4487-BD62-1E8D3DC23F6A}"
+          DTS:From="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup  Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample_Lookup  Execute SQL Task" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -481,7 +507,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{DB299990-3838-44EE-8CA9-3D7F8F68A0F9}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Post-Load Tasks&#xA;--********************************************************************--&#xA;-- Replace Foreign Keys&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD CONSTRAINT [fk_GenImg] FOREIGN KEY([Gen_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD  CONSTRAINT [fk_SEMImg] FOREIGN KEY([SEM_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSEMID] FOREIGN KEY([SEM_ID])&#xA;REFERENCES [dbo].[SEM_Results] ([SEM_ID])&#xA;&#xA;ALTER TABLE [dbo].[ImageURL]  ADD  CONSTRAINT [fk_URLImgID] FOREIGN KEY([Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SamplesObjID] FOREIGN KEY([Obj_ID])&#xA;REFERENCES [dbo].[Objects] ([Obj_ID])&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Post-Load Tasks&#xA;--********************************************************************--&#xA;-- Replace Foreign Keys&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD CONSTRAINT [fk_GenImg] FOREIGN KEY([Gen_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD  CONSTRAINT [fk_SEMImg] FOREIGN KEY([SEM_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSEMID] FOREIGN KEY([SEM_ID])&#xA;REFERENCES [dbo].[SEM_Results] ([SEM_ID])&#xA;&#xA;ALTER TABLE [dbo].[ImageURL]  ADD  CONSTRAINT [fk_URLImgID] FOREIGN KEY([Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SamplesObjID] FOREIGN KEY([Obj_ID])&#xA;REFERENCES [dbo].[Objects] ([Obj_ID])&#xA;&#xA;ALTER TABLE ImagesToSample_Lookup&#xA;ADD CONSTRAINT fk_ImagesSampleID&#xA;FOREIGN KEY (Sample_ID)&#xA;REFERENCES Samples_New(Sample_ID)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -510,7 +536,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{DB299990-3838-44EE-8CA9-3D7F8F68A0F9}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 1) Drop Foreign Keys&#xA;-- SEM_Results table&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_GenImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_GenImg&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_SEMImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_SEMImg&#xA;&#x9;End&#xA;&#xA;-- fk_ResultsSampleID table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSEMID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSEMID&#xA;&#x9;End&#xA;&#xA;-- ImageURL table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_URLImgID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ImageURL')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ImageURL&#xA;&#x9;DROP CONSTRAINT fk_URLImgID&#xA;&#x9;End&#xA;&#xA;-- SamplesToObject_Lookup table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SamplesObjID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SamplesObjID&#xA;&#x9;End&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 1) Drop Foreign Keys&#xA;-- SEM_Results table&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_GenImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_GenImg&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_SEMImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_SEMImg&#xA;&#x9;End&#xA;&#xA;-- fk_ResultsSampleID table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSEMID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSEMID&#xA;&#x9;End&#xA;&#xA;-- ImageURL table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_URLImgID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ImageURL')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ImageURL&#xA;&#x9;DROP CONSTRAINT fk_URLImgID&#xA;&#x9;End&#xA;&#xA;-- SamplesToObject_Lookup table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SamplesObjID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SamplesObjID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_ImagesSampleID')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.ImagesToSample_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ImagesToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ImagesSampleID&#xA;&#x9;End" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -527,7 +553,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{DB299990-3838-44EE-8CA9-3D7F8F68A0F9}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 2) Clear Flush and Fill Tables&#xA;Truncate Table [dbo].[Images];&#xA;Truncate Table [dbo].[ImageURL];&#xA;Truncate Table [dbo].[Objects];&#xA;Truncate Table [dbo].[References];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;--Truncate Table [dbo].[Samples];&#xA;Truncate Table [dbo].[Samples_New];&#xA;Truncate Table [dbo].[SamplesToObject_Lookup];&#xA;Truncate Table [dbo].[SEM_Results];&#xA;Truncate Table [dbo].[SEM_ResultsDim];&#xA;Truncate Table [dbo].[SEM_ResultsDataPoints];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;Truncate Table [dbo].[Users];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 2) Clear Flush and Fill Tables&#xA;Truncate Table [dbo].[Images];&#xA;Truncate Table [dbo].[ImageURL];&#xA;Truncate Table [dbo].[Objects];&#xA;Truncate Table [dbo].[References];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;--Truncate Table [dbo].[Samples];&#xA;Truncate Table [dbo].[Samples_New];&#xA;Truncate Table [dbo].[SamplesToObject_Lookup];&#xA;Truncate Table [dbo].[SEM_Results];&#xA;Truncate Table [dbo].[SEM_ResultsDim];&#xA;Truncate Table [dbo].[SEM_ResultsDataPoints];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;Truncate Table [dbo].[Users];&#xA;Truncate Table [dbo].[ImagesToSample_Lookup];&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -580,7 +606,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="218.666666666667,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill Images Execute SQL Task"
@@ -602,9 +628,39 @@
           Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Execute SQL Task"
           TopLeft="48.7499982304873,24.5833242093525" />
         <NodeLayout
+          Size="293.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDataPoints Execute SQL Task"
+          TopLeft="27.9166652075949,92.9666747794557" />
+        <NodeLayout
+          Size="261.333333333334,42.6666666666667"
+          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDim Execute SQL Task"
+          TopLeft="40.4166650213304,163.166671974461" />
+        <NodeLayout
           Size="209.333333333334,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill Users Execute SQL Task"
           TopLeft="67.4999979510902,300.683336754343" />
+        <EdgeLayout
+          Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="172.333331719041,67.2499908760192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25.7166839034365"
+              Start="0,0"
+              End="0,18.2166839034365">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.2166839034365" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 1]"
           TopLeft="169.312495301477,275.116666980486">
@@ -693,36 +749,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="293.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDataPoints Execute SQL Task"
-          TopLeft="27.9166652075949,92.9666747794557" />
-        <EdgeLayout
-          Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="172.333331719041,67.2499908760192">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25.7166839034365"
-              Start="0,0"
-              End="0,18.2166839034365">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.2166839034365" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="261.333333333334,42.6666666666667"
-          Id="Package\Fill Fact Tables Sequence Container\Fill SEM_ResultsDim Execute SQL Task"
-          TopLeft="40.4166650213304,163.166671974461" />
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container.PrecedenceConstraints[Constraint 5]"
           TopLeft="172.833331781129,135.633341446122">
@@ -770,36 +796,36 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="347.333333333334,727.333333333334"
+          PanelSize="347.333333333334,728"
           Size="347.333333333334,770.666666666667"
           Id="Package\Fill Fact Tables Sequence Container"
           TopLeft="70.1388878437381,458.249997229875" />
         <NodeLayout
           Size="232,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Execute SQL Task"
-          TopLeft="68.7916590453436,108.08332943966" />
+          TopLeft="67.1249924035122,90.7499964162708" />
         <NodeLayout
           Size="306.666666666667,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup  Execute SQL Task"
-          TopLeft="36.4999928598603,182.833328103026" />
+          TopLeft="26.4999930088719,161.166661823789" />
         <NodeLayout
           Size="308,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup  Execute SQL Task"
-          TopLeft="34.4166595575709,30.2499972298742" />
+          TopLeft="29.4166596320767,13.7833308576545" />
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="186.604159301457,72.9166638965409">
+          TopLeft="183.270826017794,56.4499975243212">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,35.1666655431192"
+              EndConnector="0,34.2999988919497"
               Start="0,0"
-              End="0,27.6666655431192">
+              End="0,26.7999988919497">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.6666655431192" />
+                    End="0,26.7999988919497" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -810,18 +836,44 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="187.312492619269,150.749996106327">
+          TopLeft="181.479159372859,133.416663082937">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.083331996699"
+              EndConnector="0,27.749998740852"
               Start="0,0"
-              End="0,24.583331996699">
+              End="0,20.249998740852">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.583331996699" />
+                    End="0,20.249998740852" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="308,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample_Lookup  Execute SQL Task"
+          TopLeft="24.8333263670404,226.566662490169" />
+        <EdgeLayout
+          Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="179.333326354623,203.833328490456">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.7333339997133"
+              Start="0,0"
+              End="0,15.2333339997133">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2333339997133" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -833,8 +885,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="356,280"
-          Size="356,322.666666666667"
+          PanelSize="356,322.666666666667"
+          Size="356,365.333333333334"
           Id="Package\Load Staging Dim Tables Sequence Container"
           TopLeft="442.361104519417,82.3333318610986" />
         <NodeLayout
@@ -887,18 +939,30 @@
           TopLeft="62.4999990686773,83.4166651750604" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="404.499999068677,244.208331851413">
+          TopLeft="404.499999068677,244.749998508394">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.8611054507397,0"
+              EndConnector="37.8611054507397,-39.305555536184"
               Start="0,0"
-              End="30.3611054507397,0">
+              End="30.3611054507397,-39.305555536184">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="30.3611054507397,0" />
+                    End="18.6176080526948,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.6176080526948,0"
+                    Point2="22.6176080526948,0"
+                    Point3="22.6176080526948,-4" />
+                  <mssgle:LineSegment
+                    End="22.6176080526948,-35.305555536184" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.6176080526948,-35.305555536184"
+                    Point2="22.6176080526948,-39.305555536184"
+                    Point3="26.6176080526948,-39.305555536184" />
+                  <mssgle:LineSegment
+                    End="30.3611054507397,-39.305555536184" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -909,30 +973,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="620.361104519417,404.999998527765">
+          TopLeft="442.361104519417,324.555554083321">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-376.555550009012,53.2499987021098"
+              EndConnector="-24.8888833423456,391.916665368776"
               Start="0,0"
-              End="-376.555550009012,45.7499987021098">
+              End="-17.3888833423456,391.916665368776">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.6249993510549" />
+                    End="-8.47998608333725,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.6249993510549"
-                    Point2="0,26.6249993510549"
-                    Point3="-4,26.6249993510549" />
+                    Point1="-8.47998608333725,0"
+                    Point2="-12.4799860833372,0"
+                    Point3="-12.4799860833372,4" />
                   <mssgle:LineSegment
-                    End="-372.555550009012,26.6249993510549" />
+                    End="-12.4799860833372,387.916665368776" />
                   <mssgle:CubicBezierSegment
-                    Point1="-372.555550009012,26.6249993510549"
-                    Point2="-376.555550009012,26.6249993510549"
-                    Point3="-376.555550009012,30.6249993510549" />
+                    Point1="-12.4799860833372,387.916665368776"
+                    Point2="-12.4799860833372,391.916665368776"
+                    Point3="-16.4799860833372,391.916665368776" />
                   <mssgle:LineSegment
-                    End="-376.555550009012,45.7499987021098" />
+                    End="-17.3888833423456,391.916665368776" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="FillSeponStaging"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{2FD99B8D-786D-47F8-93FE-1EF86D23C638}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{E0E90E17-B78A-4C7A-9C5E-90C0498B7895}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -73,7 +73,17 @@
       DTS:ObjectName="Excel Connection Manager 13">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\SEM_Results.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 14]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{974BE937-5C50-4D98-ACE6-FB277B95694D}"
+      DTS:ObjectName="Excel Connection Manager 14">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\elawa\OneDrive\Documents\SEPON_website\Database input files\Images.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1934,7 +1944,8 @@
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IsResult]" />
                         <inputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Comments]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="255"
                           cachedName="Comments"
                           externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Comments]"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Comments]" />
@@ -2617,10 +2628,11 @@
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Comments]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Comments]"
+                          length="255"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Comments]"
                           name="Comments"
                           truncationRowDisposition="FailComponent" />
@@ -3093,6 +3105,69 @@
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Total]"
                           name="Total"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ti]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ti]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ti]"
+                          name="Ti"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Pb]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Pb]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Pb]"
+                          name="Pb"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[La2O3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[La2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[La2O3]"
+                          name="La2O3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ce2O3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ce2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Ce2O3]"
+                          name="Ce2O3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Nd2O3]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Nd2O3]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Nd2O3]"
+                          name="Nd2O3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Rh]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rh]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Rh]"
+                          name="Rh"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Po]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Po]"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Po]"
+                          name="Po"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3126,7 +3201,8 @@
                           name="IsResult" />
                         <externalMetadataColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Comments]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="Comments" />
                         <externalMetadataColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Normalised]"
@@ -3337,6 +3413,34 @@
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total]"
                           dataType="r8"
                           name="Total" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ti]"
+                          dataType="r8"
+                          name="Ti" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Pb]"
+                          dataType="r8"
+                          name="Pb" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[La2O3]"
+                          dataType="r8"
+                          name="La2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Ce2O3]"
+                          dataType="r8"
+                          name="Ce2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Nd2O3]"
+                          dataType="r8"
+                          name="Nd2O3" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rh]"
+                          dataType="r8"
+                          name="Rh" />
+                        <externalMetadataColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Po]"
+                          dataType="r8"
+                          name="Po" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -3380,7 +3484,8 @@
                           name="IsResult" />
                         <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Comments]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Comments]"
                           name="Comments" />
                         <outputColumn
@@ -3639,6 +3744,41 @@
                           dataType="r8"
                           lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[P]"
                           name="P" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ti]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ti]"
+                          name="Ti" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Pb]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Pb]"
+                          name="Pb" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[La2O3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[La2O3]"
+                          name="La2O3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ce2O3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Ce2O3]"
+                          name="Ce2O3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Nd2O3]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Nd2O3]"
+                          name="Nd2O3" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Rh]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Rh]"
+                          name="Rh" />
+                        <outputColumn
+                          refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Po]"
+                          dataType="r8"
+                          lineageId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Po]"
+                          name="Po" />
                         <outputColumn
                           refId="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Total]"
                           dataType="r8"
@@ -4010,6 +4150,257 @@
       DTS:ObjectName="Load Staging Dim Tables Sequence Container">
       <DTS:Variables />
       <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{791BF12C-DDFC-41A5-80DA-AEFD42A4A23A}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Fill ImagesToSample Flow Task"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="ADO NET Destination"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."ImagesToSample_Lookup"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LAPTOP-P42C8U26\SQLEXPRESS.Sepon Staging]"
+                      connectionManagerRefId="Package.ConnectionManagers[LAPTOP-P42C8U26\SQLEXPRESS.Sepon Staging]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Img_ID]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Img_ID"
+                          externalMetadataColumnId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Img_ID]"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Img_ID]" />
+                        <inputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sample_ID]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Sample_ID"
+                          externalMetadataColumnId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sample_ID]"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sample_ID]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Img_ID]"
+                          dataType="wstr"
+                          length="100"
+                          name="Img_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sample_ID]"
+                          dataType="wstr"
+                          length="100"
+                          name="Sample_ID" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">ImagesToSample_Lookup$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 14]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 14]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Img_ID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Img_ID]"
+                          length="255"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Img_ID]"
+                          name="Img_ID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sample_ID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sample_ID]"
+                          length="255"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Sample_ID]"
+                          name="Sample_ID"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Img_ID]"
+                          dataType="wstr"
+                          length="255"
+                          name="Img_ID" />
+                        <externalMetadataColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sample_ID]"
+                          dataType="wstr"
+                          length="255"
+                          name="Sample_ID" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Img_ID]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Img_ID]"
+                          name="Img_ID" />
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Sample_ID]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Sample_ID]"
+                          name="Sample_ID" />
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task.Paths[Excel Source Output]"
+                  endId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task"
           DTS:CreationName="Microsoft.Pipeline"
@@ -4814,6 +5205,14 @@
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
           DTS:To="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{DEDADA92-EA04-4BA8-B0C9-F9E27A88B5AE}"
+          DTS:From="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -4840,7 +5239,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{6956F5F8-8AB3-4C66-9B42-81781958B570}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Post-Load Tasks&#xA;--********************************************************************--&#xA;-- Replace Foreign Keys&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD CONSTRAINT [fk_GenImg] FOREIGN KEY([Gen_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD  CONSTRAINT [fk_SEMImg] FOREIGN KEY([SEM_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSEMID] FOREIGN KEY([SEM_ID])&#xA;REFERENCES [dbo].[SEM_Results] ([SEM_ID])&#xA;&#xA;ALTER TABLE [dbo].[ImageURL]  ADD  CONSTRAINT [fk_URLImgID] FOREIGN KEY([Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SamplesObjID] FOREIGN KEY([Obj_ID])&#xA;REFERENCES [dbo].[Objects] ([Obj_ID])&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Post-Load Tasks&#xA;--********************************************************************--&#xA;-- Replace Foreign Keys&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD CONSTRAINT [fk_GenImg] FOREIGN KEY([Gen_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SEM_Results]  ADD  CONSTRAINT [fk_SEMImg] FOREIGN KEY([SEM_Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[ResultsToSample_Lookup]  ADD  CONSTRAINT [fk_ResultsSEMID] FOREIGN KEY([SEM_ID])&#xA;REFERENCES [dbo].[SEM_Results] ([SEM_ID])&#xA;&#xA;ALTER TABLE [dbo].[ImageURL]  ADD  CONSTRAINT [fk_URLImgID] FOREIGN KEY([Img_ID])&#xA;REFERENCES [dbo].[Images] ([Img_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SampleID] FOREIGN KEY([Sample_ID])&#xA;REFERENCES [dbo].[Samples_New] ([Sample_ID])&#xA;&#xA;ALTER TABLE [dbo].[SamplesToObject_Lookup]  ADD  CONSTRAINT [fk_SamplesObjID] FOREIGN KEY([Obj_ID])&#xA;REFERENCES [dbo].[Objects] ([Obj_ID])&#xA;&#xA;ALTER TABLE ImagesToSample_Lookup&#xA;ADD CONSTRAINT fk_ImagesSampleID&#xA;FOREIGN KEY (Sample_ID)&#xA;REFERENCES Samples_New(Sample_ID)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -4869,7 +5268,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{6956F5F8-8AB3-4C66-9B42-81781958B570}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 1) Drop Foreign Keys&#xA;-- SEM_Results table&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_GenImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_GenImg&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_SEMImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_SEMImg&#xA;&#x9;End&#xA;&#xA;-- fk_ResultsSampleID table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSEMID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSEMID&#xA;&#x9;End&#xA;&#xA;-- ImageURL table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_URLImgID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ImageURL')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ImageURL&#xA;&#x9;DROP CONSTRAINT fk_URLImgID&#xA;&#x9;End&#xA;&#xA;-- SamplesToObject_Lookup table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SamplesObjID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SamplesObjID&#xA;&#x9;End&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 1) Drop Foreign Keys&#xA;-- SEM_Results table&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_GenImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_GenImg&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_SEMImg')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.SEM_Results')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SEM_Results&#xA;&#x9;DROP CONSTRAINT fk_SEMImg&#xA;&#x9;End&#xA;&#xA;-- fk_ResultsSampleID table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_ResultsSEMID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ResultsToSample_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ResultsToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ResultsSEMID&#xA;&#x9;End&#xA;&#xA;-- ImageURL table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_URLImgID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.ImageURL')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ImageURL&#xA;&#x9;DROP CONSTRAINT fk_URLImgID&#xA;&#x9;End&#xA;&#xA;-- SamplesToObject_Lookup table&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SampleID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SampleID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;FROM sys.foreign_keys &#xA;WHERE object_id = OBJECT_ID(N'dbo.fk_SamplesObjID')&#xA;AND parent_object_id = OBJECT_ID(N'dbo.SamplesToObject_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE SamplesToObject_Lookup&#xA;&#x9;DROP CONSTRAINT fk_SamplesObjID&#xA;&#x9;End&#xA;&#xA;IF EXISTS (SELECT * &#xA;  FROM sys.foreign_keys &#xA;   WHERE object_id = OBJECT_ID(N'dbo.fk_ImagesSampleID')&#xA;   AND parent_object_id = OBJECT_ID(N'dbo.ImagesToSample_Lookup')&#xA;)&#xA;&#x9;Begin&#xA;&#x9;ALTER TABLE ImagesToSample_Lookup&#xA;&#x9;DROP CONSTRAINT fk_ImagesSampleID&#xA;&#x9;End" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -4886,7 +5285,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{6956F5F8-8AB3-4C66-9B42-81781958B570}"
-              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 2) Clear Flush and Fill Tables&#xA;Truncate Table [dbo].[Images];&#xA;Truncate Table [dbo].[ImageURL];&#xA;Truncate Table [dbo].[Objects];&#xA;Truncate Table [dbo].[References];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;--Truncate Table [dbo].[Samples];&#xA;Truncate Table [dbo].[Samples_New];&#xA;Truncate Table [dbo].[SamplesToObject_Lookup];&#xA;Truncate Table [dbo].[SEM_Results];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;Truncate Table [dbo].[Users];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--********************************************************************--&#xA;-- ETL Pre-Load Tasks&#xA;--********************************************************************--&#xA;-- 2) Clear Flush and Fill Tables&#xA;Truncate Table [dbo].[Images];&#xA;Truncate Table [dbo].[ImageURL];&#xA;Truncate Table [dbo].[Objects];&#xA;Truncate Table [dbo].[References];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;--Truncate Table [dbo].[Samples];&#xA;Truncate Table [dbo].[Samples_New];&#xA;Truncate Table [dbo].[SamplesToObject_Lookup];&#xA;Truncate Table [dbo].[SEM_Results];&#xA;Truncate Table [dbo].[ResultsToSample_Lookup];&#xA;Truncate Table [dbo].[Users];&#xA;Truncate Table [dbo].[ImagesToSample_Lookup];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -5096,29 +5495,29 @@
         <NodeLayout
           Size="194.666666666667,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ImageURL Flow Task"
-          TopLeft="80.7499956641765,98.1666641483704" />
+          TopLeft="82.4166623060079,75.6333312179645" />
         <NodeLayout
           Size="241.333333333334,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task"
-          TopLeft="59.63888562926,177.611107172238" />
+          TopLeft="55.4722190246815,149.877774334815" />
         <NodeLayout
           Size="293.333333333334,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill SamplesToObject_Lookup Data Flow Task"
-          TopLeft="30.4861115509023,24.6111117439137" />
+          TopLeft="28.8194449090709,7.27777872052451" />
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="177.618053607539,67.2777784105804">
+          TopLeft="177.618053607539,49.9444453871912">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30.88888573779"
+              EndConnector="0,25.6888858307733"
               Start="0,0"
-              End="0,23.38888573779">
+              End="0,18.1888858307733">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.38888573779" />
+                    End="0,18.1888858307733" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5129,18 +5528,44 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="179.194440646718,140.833330815037">
+          TopLeft="177.944440665345,118.299997884631">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36.7777763572005"
+              EndConnector="0,31.577776450184"
               Start="0,0"
-              End="0,29.2777763572005">
+              End="0,24.077776450184">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.2777763572005" />
+                    End="0,24.077776450184" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="228,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task"
+          TopLeft="64.6666657850147,215.279702788162" />
+        <EdgeLayout
+          Id="Package\Load Staging Dim Tables Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="177.402775738181,192.544441001482">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.7352617866798"
+              Start="0,0"
+              End="0,15.2352617866798">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2352617866798" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5152,19 +5577,19 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="356,280"
-          Size="356,322.666666666667"
+          PanelSize="356,312.666666666667"
+          Size="356,356"
           Id="Package\Load Staging Dim Tables Sequence Container"
           TopLeft="442.361104519417,82.3333318610986" />
         <NodeLayout
           Size="218.666666666667,42.6666666666667"
           Id="Package\Post-Load Sequence Container\Replace FK Execute SQL Task"
-          TopLeft="40.1249923290063,33.149993053377" />
+          TopLeft="39.2916590080905,32.2833264022075" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="342,157.333333333334"
-          Size="342,200"
+          Size="342,200.666666666667"
           Id="Package\Post-Load Sequence Container"
           TopLeft="459.513883564828,467.19443822619" />
         <NodeLayout
@@ -5206,18 +5631,30 @@
           TopLeft="62.4999990686773,83.4166651750604" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="404.499999068677,244.208331851413">
+          TopLeft="404.499999068677,244.749998508394">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.8611054507395,0"
+              EndConnector="37.8611054507397,-42.4166666472951"
               Start="0,0"
-              End="30.3611054507395,0">
+              End="30.3611054507397,-42.4166666472951">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="30.3611054507395,0" />
+                    End="18.6150227188982,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.6150227188982,0"
+                    Point2="22.6150227188982,0"
+                    Point3="22.6150227188982,-4" />
+                  <mssgle:LineSegment
+                    End="22.6150227188982,-38.4166666472951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.6150227188982,-38.4166666472951"
+                    Point2="22.6150227188982,-42.4166666472951"
+                    Point3="26.6150227188982,-42.4166666472951" />
+                  <mssgle:LineSegment
+                    End="30.3611054507397,-42.4166666472951" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5228,30 +5665,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="620.361104519417,404.999998527765">
+          TopLeft="442.361104519417,318.333331861099">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-381.555550009012,53.2499987021095"
+              EndConnector="-34.8888833423456,321.472220924332"
               Start="0,0"
-              End="-381.555550009012,45.7499987021095">
+              End="-27.3888833423456,321.472220924332">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.6249993510547" />
+                    End="-13.4776057813347,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.6249993510547"
-                    Point2="0,26.6249993510547"
-                    Point3="-4,26.6249993510547" />
+                    Point1="-13.4776057813347,0"
+                    Point2="-17.4776057813347,0"
+                    Point3="-17.4776057813347,4" />
                   <mssgle:LineSegment
-                    End="-377.555550009012,26.6249993510547" />
+                    End="-17.4776057813347,317.472220924332" />
                   <mssgle:CubicBezierSegment
-                    Point1="-377.555550009012,26.6249993510547"
-                    Point2="-381.555550009012,26.6249993510547"
-                    Point3="-381.555550009012,30.6249993510547" />
+                    Point1="-17.4776057813347,317.472220924332"
+                    Point2="-17.4776057813347,321.472220924332"
+                    Point3="-21.4776057813347,321.472220924332" />
                   <mssgle:LineSegment
-                    End="-381.555550009012,45.7499987021095" />
+                    End="-27.3888833423456,321.472220924332" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5262,30 +5699,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="407.472221177071,728.249997229875">
+          TopLeft="407.472221177071,817.361108340986">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52.0416623877566,-161.055559003685"
+              EndConnector="52.0416623877566,-249.833336781463"
               Start="0,0"
-              End="44.5416623877566,-161.055559003685">
+              End="44.5416623877566,-249.833336781463">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="22.0208311938783,0" />
+                    End="16.9087967400035,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.0208311938783,0"
-                    Point2="26.0208311938783,0"
-                    Point3="26.0208311938783,-4" />
+                    Point1="16.9087967400035,0"
+                    Point2="20.9087967400035,0"
+                    Point3="20.9087967400035,-4" />
                   <mssgle:LineSegment
-                    End="26.0208311938783,-157.055559003685" />
+                    End="20.9087967400035,-245.833336781463" />
                   <mssgle:CubicBezierSegment
-                    Point1="26.0208311938783,-157.055559003685"
-                    Point2="26.0208311938783,-161.055559003685"
-                    Point3="30.0208311938783,-161.055559003685" />
+                    Point1="20.9087967400035,-245.833336781463"
+                    Point2="20.9087967400035,-249.833336781463"
+                    Point3="24.9087967400035,-249.833336781463" />
                   <mssgle:LineSegment
-                    End="44.5416623877566,-161.055559003685" />
+                    End="44.5416623877566,-249.833336781463" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5552,7 +5989,7 @@
     design-time-name="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="180,42.6666666666667"
           Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task\ADO NET Destination"
@@ -5563,36 +6000,38 @@
           TopLeft="149.16666444391,34.6666660467784" />
         <EdgeLayout
           Id="Package\Fill Fact Tables Sequence Container\Fill SEM_Results Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="218.833331110577,77.333332713445">
+          TopLeft="218.833331110577,77.3333327134451">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.9166665983697,42.2666651479404"
+              EndConnector="24.9166665983693,42.2666651479399"
               Start="0,0"
-              End="24.9166665983697,34.7666651479404">
+              End="24.9166665983693,34.7666651479399">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.1333325739702" />
+                    End="0,17.13333257397" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.1333325739702"
-                    Point2="0,21.1333325739702"
-                    Point3="4,21.1333325739702" />
+                    Point1="0,17.13333257397"
+                    Point2="0,21.13333257397"
+                    Point3="4,21.13333257397" />
                   <mssgle:LineSegment
-                    End="20.9166665983697,21.1333325739702" />
+                    End="20.9166665983693,21.13333257397" />
                   <mssgle:CubicBezierSegment
-                    Point1="20.9166665983697,21.1333325739702"
-                    Point2="24.9166665983697,21.1333325739702"
-                    Point3="24.9166665983697,25.1333325739702" />
+                    Point1="20.9166665983693,21.13333257397"
+                    Point2="24.9166665983693,21.13333257397"
+                    Point3="24.9166665983693,25.13333257397" />
                   <mssgle:LineSegment
-                    End="24.9166665983697,34.7666651479404" />
+                    End="24.9166665983693,34.7666651479399" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5745,7 +6184,7 @@
     design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="139.333333333334,42.6666666666667"
           Id="Package\Load Staging Dim Tables Sequence Container\Fill ResultsToSample_Lookup Task\Excel Source"
@@ -5773,9 +6212,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5860,6 +6297,65 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source"
+          TopLeft="142.166664630175,31.4999995350838" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination"
+          TopLeft="115.499998807907,100.499998837709" />
+        <EdgeLayout
+          Id="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task.Paths[Excel Source Output]"
+          TopLeft="208.666665052374,74.1666662017504">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.333332635959"
+              Start="0,0"
+              End="0,18.833332635959">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.833332635959" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Staging Dim Tables Sequence Container\Fill ImagesToSample Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
